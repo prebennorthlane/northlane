@@ -6,262 +6,183 @@
 <title>Northlane | Business Development Across Borders</title>
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    color:#1f2937;
-    line-height:1.6;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-header{
-    background:linear-gradient(135deg,#041b57,#082c85);
-    color:white;
-    min-height:100vh;
-}
-
-nav{
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:25px 20px;
-}
-
-.logo{
-    height:90px;
-    width:auto;
-}
-
-.nav-links{
-    display:flex;
-    gap:35px;
-}
-
-.nav-links a{
-    color:white;
-    text-decoration:none;
-    font-weight:600;
-}
-
-.nav-links a:hover{
-    opacity:0.8;
-}
-
-.cta-nav{
-    background:#2563eb;
-    color:white;
-    text-decoration:none;
-    padding:14px 24px;
-    border-radius:8px;
-    font-weight:bold;
+background:#ffffff;
+color:#222;
 }
 
 .hero{
-    max-width:1000px;
-    margin:auto;
-    text-align:center;
-    padding:120px 20px;
+background:linear-gradient(135deg,#041c63,#0b2d8f);
+color:white;
+text-align:center;
+padding:80px 20px 100px;
+}
+
+.hero-logo{
+width:650px;
+max-width:90%;
+display:block;
+margin:0 auto 40px;
 }
 
 .hero h1{
-    font-size:72px;
-    margin-bottom:25px;
-    line-height:1.1;
+font-size:64px;
+font-weight:700;
+margin-bottom:20px;
 }
 
 .hero p{
-    font-size:24px;
-    max-width:850px;
-    margin:auto;
-    opacity:0.95;
+font-size:22px;
+max-width:900px;
+margin:0 auto 35px;
+line-height:1.6;
 }
 
-.hero-btn{
-    display:inline-block;
-    margin-top:40px;
-    background:white;
-    color:#041b57;
-    text-decoration:none;
-    padding:18px 38px;
-    border-radius:10px;
-    font-weight:bold;
-    font-size:18px;
+.btn{
+display:inline-block;
+padding:18px 40px;
+background:white;
+color:#041c63;
+font-weight:bold;
+text-decoration:none;
+border-radius:8px;
+transition:.3s;
 }
 
-.hero-btn:hover{
-    transform:translateY(-2px);
-}
-
-section{
-    padding:90px 20px;
+.btn:hover{
+transform:translateY(-2px);
 }
 
 .container{
-    max-width:1200px;
-    margin:auto;
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
 }
 
 h2{
-    color:#041b57;
-    font-size:42px;
-    margin-bottom:25px;
+font-size:42px;
+margin-bottom:25px;
+color:#041c63;
 }
 
 .about p{
-    max-width:900px;
-    font-size:20px;
+font-size:20px;
+line-height:1.8;
+max-width:900px;
 }
 
 .services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-    margin-top:40px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:40px;
 }
 
 .card{
-    background:#f8fafc;
-    padding:35px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+background:#f7f9fc;
+padding:35px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
 }
 
 .card h3{
-    margin-bottom:15px;
-    color:#041b57;
+color:#041c63;
+margin-bottom:15px;
 }
 
-.why{
-    background:#f8fafc;
-}
-
-.benefits{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-    margin-top:40px;
-}
-
-.benefit{
-    background:white;
-    padding:30px;
-    border-radius:15px;
-    text-align:center;
+.card p{
+line-height:1.6;
 }
 
 .contact{
-    background:#041b57;
-    color:white;
-    text-align:center;
+background:#041c63;
+color:white;
+text-align:center;
+padding:80px 20px;
 }
 
 .contact h2{
-    color:white;
+color:white;
 }
 
-.contact a{
-    color:white;
-    text-decoration:none;
-}
-
-.contact-box{
-    margin-top:30px;
-    font-size:22px;
+.contact p{
+font-size:20px;
+margin-bottom:25px;
 }
 
 footer{
-    background:#02133e;
-    color:white;
-    text-align:center;
-    padding:30px;
+padding:30px;
+text-align:center;
+background:#021347;
+color:white;
 }
 
 @media(max-width:768px){
 
+.hero{
+padding:60px 20px 80px;
+}
+
 .hero h1{
-    font-size:48px;
+font-size:42px;
 }
 
 .hero p{
-    font-size:20px;
+font-size:18px;
 }
 
-nav{
-    flex-direction:column;
-    gap:20px;
+.hero-logo{
+width:90%;
 }
 
-.nav-links{
-    flex-wrap:wrap;
-    justify-content:center;
 }
-}
+
 </style>
 </head>
 
 <body>
 
-<header>
+<section class="hero">
 
-<nav>
-<img src="logo.png" alt="Northlane Logo" class="logo">
+<img src="logo.png" alt="Northlane Logo" class="hero-logo">
 
-<div class="nav-links">
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
-</div>
-
-<a href="mailto:preben@northlane.no" class="cta-nav">
-Book a Meeting
-</a>
-</nav>
-
-<div class="hero">
 <h1>Business Development Across Borders</h1>
 
 <p>
 Northlane helps software companies, SaaS providers,
 development agencies and technology consultancies
-expand internationally and build a predictable
-pipeline of qualified business opportunities.
+expand internationally and build predictable pipelines
+of qualified business opportunities.
 </p>
 
-<a href="mailto:preben@northlane.no" class="hero-btn">
+<a href="mailto:preben@northlane.no" class="btn">
 Book a Meeting
 </a>
-</div>
 
-</header>
+</section>
 
-<section id="about">
-<div class="container about">
+<section class="container about">
 
 <h2>About Northlane</h2>
 
 <p>
 Northlane specializes in helping ambitious technology companies
-enter new markets and connect directly with decision-makers.
-We create qualified opportunities, strategic introductions,
-and measurable business growth without the need to build
-local sales teams from scratch.
+enter new markets and connect with decision-makers.
+We create business opportunities through targeted outreach,
+meeting booking, lead generation and strategic market expansion.
 </p>
 
-</div>
 </section>
 
-<section id="services">
-<div class="container">
+<section class="container">
 
 <h2>Our Services</h2>
 
@@ -270,112 +191,66 @@ local sales teams from scratch.
 <div class="card">
 <h3>Market Entry</h3>
 <p>
-Expand into new regions with a structured approach
-to business development and partner outreach.
+Expand into new regions without the cost and complexity
+of building a local sales team.
 </p>
 </div>
 
 <div class="card">
 <h3>Lead Generation</h3>
 <p>
-Build a predictable pipeline of qualified prospects
-and decision-makers.
+Build a consistent pipeline of qualified prospects and
+decision-makers that fit your ideal customer profile.
 </p>
 </div>
 
 <div class="card">
 <h3>Meeting Booking</h3>
 <p>
-We arrange high-value meetings with your ideal
-customer profile.
+We secure meetings with relevant prospects so your team
+can focus on closing deals.
 </p>
 </div>
 
 <div class="card">
 <h3>Strategic Partnerships</h3>
 <p>
-Identify and develop partnerships that accelerate
-growth and market presence.
+Identify and develop partnerships that accelerate growth
+and create new revenue opportunities.
 </p>
 </div>
 
 <div class="card">
-<h3>Sales Development</h3>
+<h3>Business Development</h3>
 <p>
-Strengthen outbound efforts and improve conversion
-through targeted engagement.
+End-to-end support for scaling internationally and creating
+predictable growth.
 </p>
 </div>
 
 <div class="card">
-<h3>International Expansion</h3>
+<h3>Sales Expansion</h3>
 <p>
-Navigate new markets efficiently with local insight
-and business development expertise.
+Strengthen your outbound strategy and improve conversion
+through targeted market engagement.
 </p>
 </div>
 
 </div>
-</div>
+
 </section>
 
-<section class="why">
-<div class="container">
-
-<h2>Why Northlane?</h2>
-
-<div class="benefits">
-
-<div class="benefit">
-<h3>Decision-Maker Access</h3>
-<p>
-Direct introductions to the people who make buying decisions.
-</p>
-</div>
-
-<div class="benefit">
-<h3>Qualified Opportunities</h3>
-<p>
-Focus only on prospects that match your ideal customer profile.
-</p>
-</div>
-
-<div class="benefit">
-<h3>Scalable Growth</h3>
-<p>
-Expand internationally without building costly local teams.
-</p>
-</div>
-
-<div class="benefit">
-<h3>Predictable Pipeline</h3>
-<p>
-Generate consistent opportunities month after month.
-</p>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<section id="contact" class="contact">
-
-<div class="container">
+<section class="contact">
 
 <h2>Let's Talk</h2>
 
 <p>
-Interested in expanding your business internationally?
+Ready to expand internationally and create new business opportunities?
 </p>
 
-<div class="contact-box">
-📧 preben@northlane.no
-<br><br>
-🌐 Northlane.no
-</div>
-
-</div>
+<a href="mailto:preben@northlane.no" class="btn">
+Contact Northlane
+</a>
 
 </section>
 
