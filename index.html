@@ -7,159 +7,203 @@
 
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-font-family:Arial, sans-serif;
-line-height:1.6;
-color:#222;
-background:#fff;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#1f2937;
+    line-height:1.6;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 header{
-background:#0A1E4D;
-color:white;
-padding:30px 20px 100px;
+    background:linear-gradient(135deg,#041b57,#082c85);
+    color:white;
+    min-height:100vh;
 }
 
-.nav{
-max-width:1200px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 20px;
 }
 
 .logo{
-height:70px;
+    height:90px;
+    width:auto;
 }
 
-.contact-btn{
-background:white;
-color:#0A1E4D;
-padding:12px 22px;
-border-radius:6px;
-text-decoration:none;
-font-weight:bold;
+.nav-links{
+    display:flex;
+    gap:35px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    opacity:0.8;
+}
+
+.cta-nav{
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:14px 24px;
+    border-radius:8px;
+    font-weight:bold;
 }
 
 .hero{
-max-width:1000px;
-margin:80px auto 0;
-text-align:center;
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+    padding:120px 20px;
 }
 
 .hero h1{
-font-size:56px;
-margin-bottom:20px;
+    font-size:72px;
+    margin-bottom:25px;
+    line-height:1.1;
 }
 
 .hero p{
-font-size:22px;
-opacity:0.9;
-max-width:800px;
-margin:auto;
+    font-size:24px;
+    max-width:850px;
+    margin:auto;
+    opacity:0.95;
 }
 
-.cta{
-margin-top:40px;
+.hero-btn{
+    display:inline-block;
+    margin-top:40px;
+    background:white;
+    color:#041b57;
+    text-decoration:none;
+    padding:18px 38px;
+    border-radius:10px;
+    font-weight:bold;
+    font-size:18px;
 }
 
-.cta a{
-display:inline-block;
-background:white;
-color:#0A1E4D;
-padding:16px 30px;
-border-radius:6px;
-text-decoration:none;
-font-weight:bold;
-font-size:18px;
+.hero-btn:hover{
+    transform:translateY(-2px);
 }
 
-.section{
-max-width:1100px;
-margin:auto;
-padding:80px 20px;
+section{
+    padding:90px 20px;
 }
 
-.section h2{
-font-size:36px;
-margin-bottom:20px;
-color:#0A1E4D;
+.container{
+    max-width:1200px;
+    margin:auto;
 }
 
-.section p{
-font-size:18px;
+h2{
+    color:#041b57;
+    font-size:42px;
+    margin-bottom:25px;
+}
+
+.about p{
+    max-width:900px;
+    font-size:20px;
 }
 
 .services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:40px;
 }
 
 .card{
-background:#f5f7fb;
-padding:30px;
-border-radius:12px;
+    background:#f8fafc;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
 }
 
 .card h3{
-color:#0A1E4D;
-margin-bottom:15px;
+    margin-bottom:15px;
+    color:#041b57;
+}
+
+.why{
+    background:#f8fafc;
+}
+
+.benefits{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.benefit{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
 }
 
 .contact{
-background:#f5f7fb;
-text-align:center;
-padding:80px 20px;
+    background:#041b57;
+    color:white;
+    text-align:center;
 }
 
 .contact h2{
-color:#0A1E4D;
-margin-bottom:20px;
+    color:white;
 }
 
 .contact a{
-color:#0A1E4D;
-font-weight:bold;
-text-decoration:none;
+    color:white;
+    text-decoration:none;
+}
+
+.contact-box{
+    margin-top:30px;
+    font-size:22px;
 }
 
 footer{
-background:#0A1E4D;
-color:white;
-text-align:center;
-padding:30px;
-}
-
-.linkedin-btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 24px;
-background:#0077B5;
-color:white;
-text-decoration:none;
-border-radius:6px;
+    background:#02133e;
+    color:white;
+    text-align:center;
+    padding:30px;
 }
 
 @media(max-width:768px){
 
 .hero h1{
-font-size:38px;
+    font-size:48px;
 }
 
 .hero p{
-font-size:18px;
+    font-size:20px;
 }
 
-.nav{
-flex-direction:column;
-gap:20px;
+nav{
+    flex-direction:column;
+    gap:20px;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
 }
 }
 </style>
@@ -169,47 +213,55 @@ gap:20px;
 
 <header>
 
-<div class="nav">
+<nav>
 <img src="logo.png" alt="Northlane Logo" class="logo">
 
-<a href="mailto:preben@northlane.no" class="contact-btn">
-Contact Us
-</a>
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
 </div>
 
-<div class="hero">
+<a href="mailto:preben@northlane.no" class="cta-nav">
+Book a Meeting
+</a>
+</nav>
 
+<div class="hero">
 <h1>Business Development Across Borders</h1>
 
 <p>
-Northlane helps technology companies expand into new markets,
-connect with decision-makers, and build a predictable pipeline
-of business opportunities.
+Northlane helps software companies, SaaS providers,
+development agencies and technology consultancies
+expand internationally and build a predictable
+pipeline of qualified business opportunities.
 </p>
 
-<div class="cta">
-<a href="mailto:preben@northlane.no">
+<a href="mailto:preben@northlane.no" class="hero-btn">
 Book a Meeting
 </a>
 </div>
 
-</div>
-
 </header>
 
-<section class="section">
+<section id="about">
+<div class="container about">
 
 <h2>About Northlane</h2>
 
 <p>
-We help software companies, SaaS providers, development agencies,
-and technology consultancies accelerate growth through strategic
-business development, lead generation, and market expansion.
+Northlane specializes in helping ambitious technology companies
+enter new markets and connect directly with decision-makers.
+We create qualified opportunities, strategic introductions,
+and measurable business growth without the need to build
+local sales teams from scratch.
 </p>
 
+</div>
 </section>
 
-<section class="section">
+<section id="services">
+<div class="container">
 
 <h2>Our Services</h2>
 
@@ -218,63 +270,117 @@ business development, lead generation, and market expansion.
 <div class="card">
 <h3>Market Entry</h3>
 <p>
-Expand into new regions without the cost of building a local sales team.
+Expand into new regions with a structured approach
+to business development and partner outreach.
 </p>
 </div>
 
 <div class="card">
 <h3>Lead Generation</h3>
 <p>
-Build a predictable pipeline of qualified prospects and opportunities.
+Build a predictable pipeline of qualified prospects
+and decision-makers.
 </p>
 </div>
 
 <div class="card">
 <h3>Meeting Booking</h3>
 <p>
-Get direct access to decision-makers that match your ideal customer profile.
+We arrange high-value meetings with your ideal
+customer profile.
 </p>
 </div>
 
 <div class="card">
 <h3>Strategic Partnerships</h3>
 <p>
-Identify and develop partnerships that accelerate growth and market presence.
+Identify and develop partnerships that accelerate
+growth and market presence.
+</p>
+</div>
+
+<div class="card">
+<h3>Sales Development</h3>
+<p>
+Strengthen outbound efforts and improve conversion
+through targeted engagement.
+</p>
+</div>
+
+<div class="card">
+<h3>International Expansion</h3>
+<p>
+Navigate new markets efficiently with local insight
+and business development expertise.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="why">
+<div class="container">
+
+<h2>Why Northlane?</h2>
+
+<div class="benefits">
+
+<div class="benefit">
+<h3>Decision-Maker Access</h3>
+<p>
+Direct introductions to the people who make buying decisions.
+</p>
+</div>
+
+<div class="benefit">
+<h3>Qualified Opportunities</h3>
+<p>
+Focus only on prospects that match your ideal customer profile.
+</p>
+</div>
+
+<div class="benefit">
+<h3>Scalable Growth</h3>
+<p>
+Expand internationally without building costly local teams.
+</p>
+</div>
+
+<div class="benefit">
+<h3>Predictable Pipeline</h3>
+<p>
+Generate consistent opportunities month after month.
 </p>
 </div>
 
 </div>
 
+</div>
 </section>
 
-<section class="contact">
+<section id="contact" class="contact">
+
+<div class="container">
 
 <h2>Let's Talk</h2>
 
 <p>
-Interested in expanding your business?
+Interested in expanding your business internationally?
 </p>
 
-<br>
+<div class="contact-box">
+📧 preben@northlane.no
+<br><br>
+🌐 Northlane.no
+</div>
 
-<p>
-<a href="mailto:preben@northlane.no">
-preben@northlane.no
-</a>
-</p>
-
-<a href="https://www.linkedin.com" class="linkedin-btn">
-Connect on LinkedIn
-</a>
+</div>
 
 </section>
 
 <footer>
-
-<p>
-© 2026 Northlane. All Rights Reserved.
-</p>
-
+© 2026 Northlane. All rights reserved.
 </footer>
 
 </body>
