@@ -1024,19 +1024,20 @@ h1 em {
   }
 
   .hero-visual {
-    height: 385px;
-    left: 50%;
-    margin-left: -260px;
-    transform: scale(0.7);
-  }
-
-  .hero-foot {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 13px;
-    margin-top: -45px;
-  }
-
+  width: 100%;
+  max-width: 320px;
+  height: 300px;
+  margin: 40px auto;
+  left: auto;
+  transform: scale(0.6);
+  transform-origin: center;
+}
+ .hero-foot {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 13px;
+  margin-top: 30px;
+} 
   .industry-list {
     align-items: flex-start;
     flex-direction: column;
