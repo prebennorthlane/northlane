@@ -75,7 +75,7 @@ a {
 }
 
 .brand {
-  width: 268px;
+  width: 340px;
 }
 
 .site-nav {
@@ -868,7 +868,7 @@ h1 em {
   }
 
   .brand {
-    width: 220px;
+    width: 280px;
   }
 
   .menu-toggle {
@@ -1003,7 +1003,7 @@ h1 em {
 
 @media (max-width: 560px) {
   .brand {
-    width: 192px;
+   width: 240px; 
   }
 
   .hero {
